@@ -10,11 +10,12 @@ An end-to-end procurement analytics project: a Python pipeline generates and ana
 3. **Where should negotiation effort go?** A Pareto analysis shows a small set of SKUs drives 80% of spend.
 
 ## Project structure
-├── index.html # interactive dashboard (Chart.js, live filters)
-├── generate_and_analyze.py # data generation + KPI analysis (pandas/NumPy)
-├── procurement_data.csv # 8,595 purchase orders (also used for the Power BI version)
+```
+├── index.html                  # interactive dashboard (Chart.js, live filters)
+├── generate_and_analyze.py     # data generation + KPI analysis (pandas/NumPy)
+├── procurement_data.csv        # 8,595 purchase orders (also used for the Power BI version)
 └── README.md
-
+```
 ## Methodology
 - **Data:** synthetic transactional data generated with seeded randomness to mirror real procurement patterns — flu-season demand spikes (Oct–Feb), ~4.5% annual price inflation, supplier reliability drift, and a 14% off-contract purchase rate carrying an 8–15% price premium. No proprietary data is used.
 - **Analysis (Python / pandas):** contract-compliance quantification, supplier scorecards (on-time delivery vs. 90% SLA, lead times, spend share), Pareto/ABC spend concentration, and YoY trend decomposition.
